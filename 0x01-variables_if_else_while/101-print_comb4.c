@@ -3,7 +3,9 @@
 /**
  * main - prints out all possible different combinations of three digits.
  *
+ *
  * Return: Always 0 (Success)
+ *
  */
 
 int main(void)
@@ -23,6 +25,7 @@ int main(void)
 					putchar(hundreds);
 					putchar(tens);
 					putchar(ones);
+					
 					if (!(ones == '9' && hundreds == '7' && tens == '8'))/*adds comas and spaces*/
 					{
 						putchar(',');
@@ -32,6 +35,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
